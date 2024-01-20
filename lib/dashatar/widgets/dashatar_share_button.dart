@@ -132,8 +132,7 @@ class _DashatarShareButtonState extends State<DashatarShareButton> {
         ),
         child: TextButton(
           style: TextButton.styleFrom(
-            padding: EdgeInsets.zero,
-            primary: widget.color,
+            foregroundColor: widget.color, padding: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(32),
             ),

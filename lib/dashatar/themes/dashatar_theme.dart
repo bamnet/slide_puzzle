@@ -82,7 +82,7 @@ abstract class DashatarTheme extends PuzzleTheme {
   ///
   /// The dash asset for the i-th tile may be found in the file i.png.
   String dashAssetForTile(Tile tile) =>
-      p.join(dashAssetsDirectory, '${tile.value.toString()}.png');
+      p.join(dashAssetsDirectory, '${tile.value}.png');
 
   @override
   List<Object?> get props => [
@@ -106,6 +106,6 @@ abstract class DashatarTheme extends PuzzleTheme {
         themeAsset,
         successThemeAsset,
         audioAsset,
-        dashAssetsDirectory
+        dashAssetsDirectory,
       ];
 }

@@ -113,7 +113,7 @@ void main() {
           PuzzleState(
             puzzle: puzzleSize3Unshuffled,
             numberOfCorrectTiles: 8,
-          )
+          ),
         ],
         verify: (bloc) => expect(bloc.state.puzzle.isSolvable(), isTrue),
       );

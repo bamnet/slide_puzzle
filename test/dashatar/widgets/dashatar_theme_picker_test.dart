@@ -20,7 +20,7 @@ void main() {
       dashatarThemes = [
         GreenDashatarTheme(),
         YellowDashatarTheme(),
-        BlueDashatarTheme()
+        BlueDashatarTheme(),
       ];
       dashatarTheme = GreenDashatarTheme();
       final dashatarThemeState = DashatarThemeState(

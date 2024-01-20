@@ -326,8 +326,7 @@ class SimplePuzzleTile extends StatelessWidget {
 
     return TextButton(
       style: TextButton.styleFrom(
-        primary: PuzzleColors.white,
-        textStyle: PuzzleTextStyle.headline2.copyWith(
+        foregroundColor: PuzzleColors.white, textStyle: PuzzleTextStyle.headline2.copyWith(
           fontSize: tileFontSize,
         ),
         shape: const RoundedRectangleBorder(

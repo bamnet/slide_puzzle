@@ -31,7 +31,7 @@ class PuzzlePage extends StatelessWidget {
             themes: const [
               BlueDashatarTheme(),
               GreenDashatarTheme(),
-              YellowDashatarTheme()
+              YellowDashatarTheme(),
             ],
           ),
         ),
@@ -131,8 +131,8 @@ class _Puzzle extends StatelessWidget {
                 constraints: BoxConstraints(
                   minHeight: constraints.maxHeight,
                 ),
-                child: Column(
-                  children: const [
+                child: const Column(
+                  children: [
                     PuzzleHeader(),
                     PuzzleSections(),
                   ],
@@ -175,25 +175,25 @@ class PuzzleHeader extends StatelessWidget {
             ),
           ],
         ),
-        medium: (context, child) => Padding(
-          padding: const EdgeInsets.symmetric(
+        medium: (context, child) => const Padding(
+          padding: EdgeInsets.symmetric(
             horizontal: 50,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               PuzzleLogo(),
               PuzzleMenu(),
             ],
           ),
         ),
-        large: (context, child) => Padding(
-          padding: const EdgeInsets.symmetric(
+        large: (context, child) => const Padding(
+          padding: EdgeInsets.symmetric(
             horizontal: 50,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               PuzzleLogo(),
               PuzzleMenu(),
             ],
@@ -295,7 +295,7 @@ class PuzzleBoard extends StatelessWidget {
           puzzle.tiles
               .map(
                 (tile) => _PuzzleTile(
-                  key: Key('puzzle_tile_${tile.value.toString()}'),
+                  key: Key('puzzle_tile_${tile.value}'),
                   tile: tile,
                 ),
               )
@@ -358,7 +358,7 @@ class PuzzleMenu extends StatelessWidget {
                 const Gap(44),
                 AudioControl(
                   key: audioControlKey,
-                )
+                ),
               ],
             );
           },

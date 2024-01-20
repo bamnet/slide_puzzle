@@ -155,7 +155,7 @@ class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
             value: i,
             correctPosition: correctPositions[i - 1],
             currentPosition: currentPositions[i - 1],
-          )
+          ),
     ];
   }
 }
